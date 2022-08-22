@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup-Quiz</title>
+    <style>
+        body{
+            background-color: aliceblue;
+           
+        }
+        .main{
+            position: fixed;
+            left: 35%;
+            width: 400px;
+            height: 400px;
+            border: 0px;
+            background-color: white;   
+        }
+        .heading{
+            display: flex;
+            margin-left: 30px;
+        }
+        #questions{
+            width: 300px;
+        }
+        .contents{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        .select{
+            width: 300px;
+        }
+       
+        .btn{
+            display: block;
+            background-color: orangered;
+            margin-left: 30px;
+            width: 280px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Setup-Quiz</h1>
+        </div>
+        <div class="contents">
+            <div>
+                
+                <label for="questions">Number of Questions</label><br>
+                <input type="number" id="questions" ><br><br>
+            </div>
+
+            <div>
+                <label for="ct">Category</label><br>
+                <select class="select" id="ct">
+                    <option value="sports">sports</option>
+                    <option value="history">history</option>
+                    <option value="politics">politics</option>
+                </select>
+            </div><br>
+
+            <div>
+                
+                <label for="difficulty">Difficulty</label>
+                <select class="select" id="difficulty" size="">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="difficult">difficult</option>
+                </select>
+
+            </div><br><br>
+        </div>
+        <div class="btn">
+           <a href="Quiz.html" target="_blank"> <button type="button" class="btn">Start</button> </a>
+        </div>
+    </div>
+
+    
+</body>
+</html>
